@@ -1,0 +1,1005 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/* =======================================
+            naver part start
+========================================== */
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+nav .main{
+    display: flex;
+}
+
+nav .logo{
+    width: 20%;
+}
+
+nav .item{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav .item ul{
+    text-align: right;
+}
+
+nav .item ul li{
+    display: inline-block;
+}
+
+nav .item ul li a{
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-left: 40px;
+    transition: .4s;
+    position: relative;
+}
+
+nav .item ul li a:after{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #744fa0;
+    content: "";
+    transition: .4s;
+}
+
+nav .item ul li a:hover::after{
+    width: 50%;
+}
+
+nav .item ul li a:hover{
+    color: #744fa0;
+}
+
+nav .button{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav .button a{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    background: #744fa0;
+    padding: 10px 20px;
+    transition: .4s;
+}
+
+nav .button:hover a{
+    background: #fff;
+    color: #000;
+}
+
+/* =======================================
+            naver part end
+========================================== */
+
+/* =======================================
+            banner part start
+========================================== */
+#banner .slider{
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#banner .slider .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    text-align: right;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#banner .slider .overlay h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#banner .slider .overlay h1::first-letter{
+    color: #744fa0;
+}
+
+#banner .slider .overlay h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: capitalize;
+    position: relative;
+}
+
+#banner .slider .overlay h3:after{
+    position: absolute;
+    bottom: -26px;
+    right: 0;
+    width: 200px;
+    height: 1px;
+    background: #fff;
+    content: "";
+}
+
+#banner .slider .overlay p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 470px;
+    margin-left: auto;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+#banner .slider .overlay a{
+     display: inline-block;
+     background: #744fa0;
+     padding: 10px 20px;
+     padding-left: 60px;
+     text-align: left;
+     color: #fff;
+     border-radius: 5px;
+     margin-left: 10px;
+     position: relative;
+     transition: .4s;
+}
+
+#banner .slider .overlay a:hover{
+    background: #fff;
+    color: #353535;
+}
+
+#banner .slider .overlay a i{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    font-size: 33px;
+}
+
+#banner .slider .overlay a:hover i{
+    color: #353535;
+}
+
+#banner .slider .overlay a span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#banner .slider .overlay a h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#banner .slick-dots{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+#banner .slick-dots li{
+    margin-bottom: 10px;
+}
+
+#banner .slick-dots li button{
+    background: transparent;
+    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 0;
+    position: relative;
+}
+
+#banner .slick-dots li button:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #744fa0;
+    opacity: 0;
+    content: "";
+}
+
+#banner .slick-dots .slick-active button{
+     border-color: #744fa0;
+}
+
+#banner .slick-dots .slick-active button:after{
+    opacity: 1;
+}
+
+#banner{
+    position: relative;
+}
+
+#banner i{
+    position: absolute;
+    top: 38%;
+    right: 10px;
+    color: #fff;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* =======================================
+            banner part end
+========================================== */
+
+/* =======================================
+            about part start
+========================================== */
+#about{
+     margin-top: 100px;
+}
+
+#about .main{
+    display: flex;
+}
+
+#about .text{
+    width: 50%;
+    margin-top: 50px;
+}
+
+#about .text .details p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #777777;
+    line-height: 24px;
+
+    margin-top: 30px;
+}
+
+#about .image{
+    width: 50%;
+    text-align: right;
+}
+
+/* =======================================
+            about part end
+========================================== */
+
+/* =======================================
+            feature part start
+========================================== */
+#feature{
+    background: #f1f1f1;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+#feature .main{
+    display: flex;
+    margin-top: 30px;
+}
+
+#feature .left{
+    width: 40%;
+}
+
+#feature .left h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#feature .left p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#feature .left .item{
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 60px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#feature .left .item:hover{
+    color: #744fa0;
+}
+
+#feature .left .item:last-child::after{
+    opacity: 0;
+}
+
+#feature .left .item:after{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 270px;
+    height: 1px;
+    background: #000;
+    content: "";
+    transition: .4s;
+}
+
+#feature .left .item:hover:after{
+    width: 370px;
+    background: #744fa0;
+}
+
+#feature .left i{
+    font-size: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#feature .middle{
+    width: 30%;  
+}
+
+
+#feature .right{
+    width: 30%;
+    text-align: right;
+    margin-top: 70px;
+}
+
+#feature .right h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #353535;
+}
+
+#feature .right p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+    margin-top: 30px;
+    line-height: 24px;
+}
+
+
+/* =======================================
+            feature part end
+========================================== */
+
+/* =======================================
+            screenshoot part start
+========================================== */
+#screenshoot{
+    margin-top: 100px;
+}
+
+#screenshoot img{
+    margin: 0 10px;;
+}
+
+#screenshoot .image-slider{
+    margin-top: 30px;
+}
+
+#screenshoot .slick-dots{
+    position: absolute;
+    bottom: -35px;
+    right: 50%;
+    text-align: center;
+    transform: translateX(50%);
+}
+
+#screenshoot .slick-dots li{
+    float: left;
+    margin: 0 5px;
+
+}
+
+#screenshoot .slick-dots li button{
+    background: transparent;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #744fa0;
+    font-size: 0;
+    position: relative;
+}
+
+#screenshoot .slick-dots .slick-active button::after{
+   background: #744fa0;
+}
+
+#screenshoot .slick-dots li button:after{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+}
+
+
+/* =======================================
+            screenshoot part end
+========================================== */
+
+/* =======================================
+            video part start
+========================================== */
+#video{
+    margin-top: 120px;
+
+}
+
+#video .image{
+    background: url(../images/video.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+#video .image .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    text-align: center;
+}
+
+#video .image .overlay i{
+    color: #fff;
+    font-size: 100px;
+    padding: 200px 0;
+    color: #744fa0;
+}
+
+
+/* =======================================
+            video part end
+========================================== */
+
+/* =======================================
+            pricing part start
+========================================== */
+#pricing{
+    margin-top: 100px;
+}
+
+#pricing .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing .item{
+    width: 23%;
+    text-align: center;
+    transition: .4s;
+    margin-top: 50px;
+}
+
+#pricing .item h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #353535;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #f1f1f1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px 0;
+}
+
+#pricing .item .round-box{
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    padding: 20px 0;
+}
+
+#pricing .item .round-box .round{
+    width: 113px;
+    height: 113px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#pricing .item .round-box .round .text{
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-58%);
+}
+
+#pricing .item .round-box .round .text h4{
+    color: #353535;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;   
+}
+
+#pricing .item .round-box .round .text h4 span{
+    font-size: 47px;
+}
+
+#pricing .item .round-box .round .text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #555555;
+}
+
+#pricing .item ul{
+    background: #f1f1f1;
+    padding: 20px 0;
+    padding-bottom: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#pricing .item ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555555;
+    padding-bottom: 8px;
+}
+
+#pricing .item .button a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #353535;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+
+#pricing .item:hover h3{
+    background: #744fa0;
+    color: #fff;
+}
+
+#pricing .item:hover a{
+    background: #744fa0;
+    color: #fff;
+}
+
+
+/* =======================================
+            pricing part end
+========================================== */
+
+/* =======================================
+            team part start
+========================================== */
+#team{
+    margin-top: 100px;
+}
+
+#team .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#team .member{
+    width: 30%;
+    position: relative;
+}
+
+#team .member .img{
+    position: relative;
+    top: 0;
+    margin-top: 100px;
+    transition: .4s;
+}
+
+#team .member:hover .img{
+    top: -50px;
+}
+
+#team .member .img img{
+    width: 100%;
+    display: block;
+}
+
+#team .member .img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .4s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#team .member:hover .img .overlay{
+    opacity: 1;
+}
+
+
+#team .member .img .overlay .icon i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #000;
+    margin-left: 5px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    transition: .4s;
+}
+
+
+#team .member .img .overlay .icon{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+#team .member .img .overlay .icon i:hover{
+    background: #744fa0;
+    color: #fff;
+}
+
+#team .member .text{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: .4s;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#team .member:hover .text{
+    top: 89%;
+}
+
+#team .member .text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #353535;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#team .member .text h3{
+    font-family: 'Open sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #777;
+    padding: 10px 0;
+}
+
+#team .member .text p {
+	color: #777;
+	font-size: 14px;
+	font-family: 'Open sans', sans-serif;
+	font-weight: 400;
+}
+
+/* =======================================
+            team part end
+========================================== */
+
+/* =======================================
+            feedback part start
+========================================== */
+#feedback-part{
+    margin-top: 200px;
+}
+
+#feedback-part .feedback{
+    background: url(../images/feedback_img.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: 70px;
+}
+
+#feedback-part .feedback .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    padding: 50px 0;
+}
+
+#feedback-part .feedback .overlay .top{
+    width: 800px;
+    padding: 20px;
+    background: #f1f1f1;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+#feedback-part .feedback .overlay .top .shape{
+    width: 20px;
+    height: 20px;
+    background: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+
+#feedback-part .feedback .overlay .top .text{
+    text-align: center;
+}
+
+#feedback-part .feedback .overlay .top .text p{
+    color: #777;
+    font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    padding: 0 47px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+#feedback-part .feedback .overlay .top .text h3{
+    color: #353535;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+#feedback-part .feedback .overlay .top .text h4{
+    color: #353535;
+    font-family: 'Open sans',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 4px 0;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+#feedback-part .feedback .overlay .top .text .star i{
+    color: #744fa0;
+    font-size: 14px;
+}
+
+#feedback-part .feedback .overlay .bottom{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#feedback-part .feedback .overlay .bottom .img{
+    width: 100px;
+    border-radius: 50%;
+    margin: 15px;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+#feedback-part .feedback .overlay .bottom .img img{
+    width: 100%;
+}
+
+#feedback-part .feedback .overlay .bottom .img .bottom-overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#feedback-part .feedback .overlay .bottom .slick-center{
+    transform: scale(1.3);
+    border-color: #744fa0;
+}
+
+#feedback-part .feedback .overlay .bottom .slick-center .bottom-overlay{
+    opacity: 0;
+}
+
+#feedback-part .feedback .overlay .bottom .slick-dots{
+    text-align: center;
+
+}
+
+#feedback-part .feedback .overlay .bottom .slick-dots li{
+    display: inline-block;
+    margin: 0 6px;
+    padding-top: 20px;
+}
+
+#feedback-part .feedback .overlay .bottom .slick-dots li button{
+    background: transparent;
+    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 0;
+    position: relative;
+}
+
+#feedback-part .feedback .overlay .bottom .slick-dots li button:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #744fa0;
+    opacity: 0;
+    content: "";
+}
+
+#feedback-part .feedback .overlay .bottom .slick-dots .slick-active button{
+     border-color: #744fa0;
+}
+
+#feedback-part .feedback .overlay .bottom .slick-dots .slick-active button:after{
+    opacity: 1;
+}
+/* =======================================
+            feedback part end
+========================================== */
+
+/* =======================================
+            table part start
+========================================== */
+#table{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#table .main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#table input{
+    width: 30%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-family: 'Open sans',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 20px 0;
+    padding-left: 10px;
+    border: 1px solid #353535;
+    color: #777777;
+}
+
+#table textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    font-family: 'Open sans',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #353535;
+    padding: 20px 10px;
+    resize: none;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    color: #777777;
+}
+
+#table button{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #744fa0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* =======================================
+            table part end
+========================================== */
+
+/* =======================================
+            footer part start
+========================================== */
+footer{
+    background: #353535;
+    margin-top: 100px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer a i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px !important;
+    background: #fff;
+    font-size: 24px;
+    color: #353535;
+    margin-top: 25px;
+    margin-left: 8px;
+    transition: .4s;
+} 
+
+footer a:hover i {
+    color: #fff;
+    background: #744fa0;
+}
+
+footer h3{
+    font-family: 'Open sans',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+footer span{
+    font-family: 'Open sans',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #744fa0;
+}
+
+/* =======================================
+            footer part end
+========================================== */
